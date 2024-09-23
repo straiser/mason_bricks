@@ -1,0 +1,21 @@
+import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+part '{{sub_feature_name}}_state.dart'; 
+{{#isEffect}}part 'some_feature_details_effect.dart';{{/isEffect}}
+
+class {{sub_feature_name.pascalCase()}}Cubit extends Cubit<{{sub_feature_name.pascalCase()}}State> {
+  {{sub_feature_name.pascalCase()}}Cubit() : super(const {{sub_feature_name.pascalCase()}}Initial());
+  
+  void load() {
+    emit(const {{sub_feature_name.pascalCase()}}Loading()); 
+    Future.delayed(const Duration(seconds: 2), () {
+      emit(const {{sub_feature_name.pascalCase()}}Loaded()); 
+    });
+  }
+  void refresh() { 
+    emit(const {{sub_feature_name.pascalCase()}}Loading()); 
+    Future.delayed(const Duration(seconds: 2), () {
+      emit(const {{sub_feature_name.pascalCase()}}Loaded()); 
+    });
+  }
+}

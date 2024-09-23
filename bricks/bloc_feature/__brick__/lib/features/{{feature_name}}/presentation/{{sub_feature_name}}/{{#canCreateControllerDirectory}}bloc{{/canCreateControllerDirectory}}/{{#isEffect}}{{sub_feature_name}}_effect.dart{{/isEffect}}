@@ -1,0 +1,6 @@
+{{#isBlocController}}part of '{{sub_feature_name}}_bloc.dart';{{/isBlocController}}
+{{#isCubitController}}part of '{{sub_feature_name}}_cubit.dart';{{/isCubitController}}
+
+abstract class {{sub_feature_name.pascalCase()}}Effect extends Equatable {
+  const {{sub_feature_name.pascalCase()}}Effect();  
+}
