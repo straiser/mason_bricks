@@ -2,11 +2,11 @@ name: bloc_feature
 description: One brick to create them all
 
 
-version: 0.1.4
+version: 0.1.5
 
 
 environment:
-  mason: ">=0.1.0-dev.38 <0.1.0"
+  mason: "<=0.1.1 <0.1.0"
 
 # Variables specify dynamic values that your brick depends on.
 # Zero or more variables can be specified for a given brick.

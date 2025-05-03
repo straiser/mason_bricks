@@ -4,3 +4,5 @@
 bricks:
   bloc_feature:
     path: bricks/bloc_feature
+  usecase:
+    path: bricks/usecase
